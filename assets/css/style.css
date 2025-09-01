@@ -1,29 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    background: #2d3e50;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+header h1 {
     text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 nav {
     margin: 20px 0;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
 nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
 nav a:hover {
-    background: #e8491d;
+    color: #ffb347;
 }
 
 .container {
@@ -32,11 +56,28 @@ nav a:hover {
     overflow: hidden;
 }
 
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
 footer {
-    background: #35424a;
-    color: #ffffff;
+    background: #2d3e50;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
     position: relative;
     bottom: 0;
     width: 100%;
